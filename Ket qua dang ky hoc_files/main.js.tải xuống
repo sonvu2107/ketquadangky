@@ -1,0 +1,14 @@
+(function($){
+	$(window).load(function() {
+		$('.nivoSlider').nivoSlider({
+			directionNav: true,
+		});
+	});
+
+	$(function(){
+        
+        $('.navbar-nav>li>a').on('click', function(e){
+            window.location.href = this.href;
+        })
+	})
+})(jQuery);
